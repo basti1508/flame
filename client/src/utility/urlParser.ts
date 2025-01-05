@@ -1,4 +1,4 @@
-const hasProtocol = (url: string): boolean => /^\w+:\/\//.test(url);
+const hasProtocol = (url: string): boolean => /^[\w-]+:\/\//.test(url);
 const isSteamUrl = (url: string): boolean => /^steam:\/\//.test(url);
 const isWebUrl = (url: string): boolean => /^https?:\/\//.test(url);
 
